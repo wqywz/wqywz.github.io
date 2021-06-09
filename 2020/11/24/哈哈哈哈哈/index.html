@@ -296,11 +296,13 @@
       <span class="post-meta-item-icon">
         <i class="far fa-comment"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
+      <span class="post-meta-item-text">Changyan：</span>
     
-    <a title="valine" href="/2020/11/24/%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/11/24/%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88/" itemprop="commentCount"></span>
-    </a>
+    
+      <a title="changyan" href="/2020/11/24/%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88/#SOHUCS" itemprop="discussionUrl">
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2020/11/24/哈哈哈哈哈/" itemprop="commentCount"></span>
+      </a>
+    
   </span>
   
   
@@ -344,7 +346,11 @@
 
 
       
-    <div class="comments" id="valine-comments"></div>
+    
+  <div class="comments">
+    <div id="SOHUCS"></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -428,17 +434,17 @@
 
   
 
-<script>
-NexT.utils.loadComments('#valine-comments', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
-    new Valine(Object.assign({"enable":true,"appId":"MLakNoto5QjqzD3jhyL1SPDo-gzGzoHsz","appKey":"1KhuL5i2sLCnUiNXwcYJvEcX","serverURLs":null,"placeholder":"ヾﾉ≧∀≦)o来啊，快活啊!","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-cn","visitor":false,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":[]}, {
-      el: '#valine-comments',
-      path: "/2020/11/24/%E5%93%88%E5%93%88%E5%93%88%E5%93%88%E5%93%88/",
-      serverURLs: "https://mlaknoto.api.lncldglobal.com"
-    }));
-  }, window.Valine);
-});
-</script>
+  <script>
+  NexT.utils.loadComments('#SOHUCS', () => {
+    NexT.utils.getScript('https://changyan.sohu.com/upload/changyan.js', () => {
+      window.changyan.api.config({
+        appid: 'cyvuQEGkO',
+        conf : '8e756c79e05fa628955657d6c8d04823'
+      });
+    });
+  });
+  </script>
+  <script src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
 
 </body>
 </html>
